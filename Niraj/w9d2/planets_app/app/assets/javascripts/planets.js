@@ -47,7 +47,7 @@ Planets.Views.PlanetView = Backbone.View.extend({
   saveChanges: function(ev) {
     var $target = $(ev.currentTarget);
     var newHeadLine = $target.val();
-    this.model.set('title', newHeadLine);
+    this.model.set('name', newHeadLine);
     this.model.save();
   }
 
