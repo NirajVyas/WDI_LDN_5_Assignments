@@ -58,7 +58,7 @@ starApp.views.StarCollectionView = Backbone.View.extend({
     $name.val('');
     $mass.val('');
     $orbit.val('');
-    $picture.val('');
+    $picture.val('http://www.ipad-wallpapers.us/bgs/universe.jpg');
   },
 
   render: function() {
