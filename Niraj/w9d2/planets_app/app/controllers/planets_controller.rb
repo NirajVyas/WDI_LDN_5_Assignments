@@ -24,7 +24,9 @@ end
   end
 end
 
-
+ def destroy
+    Planet.find(params[:id]).destory
+ end
 
 
 end

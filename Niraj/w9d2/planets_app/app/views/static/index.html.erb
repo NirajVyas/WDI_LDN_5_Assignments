@@ -1,5 +1,4 @@
-<h1> TEST </h1>
-
+<div class="added_planet">
 <% content_for :templates do %>
   <script type="text/template" id="tmpl_planet">
     <h2><%%= planet.get('name') %> </h2>
@@ -17,6 +16,7 @@
     <%% } %>
 
   </script>
+</div>
 
   <script type="text/template" id="tmpl_newplanet">
     <form>
@@ -28,11 +28,10 @@
     </form>
     <a href=#>Back to all planets</a>
   </script>
-
 <% end %>
 
 <h1> My Planets </h1>
-<a href="#new">Create new planet</a>
+<div class="new_planet"><a href="#new">Create new planet</a></div>
 <div id="container">
   <p>Please wait, application loading...</p>
 </div>
