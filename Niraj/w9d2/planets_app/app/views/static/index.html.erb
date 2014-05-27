@@ -1,6 +1,7 @@
-<div class="added_planet">
 <% content_for :templates do %>
   <script type="text/template" id="tmpl_planet">
+  <div class="added_planet">
+
     <h2><%%= planet.get('name') %> </h2>
     
     <%% if (planet.get('size')) { %>
@@ -14,9 +15,10 @@
       <%% } else { %>
         <p><em>No description</em></p>
     <%% } %>
+    <%= button_to 'Delete Planet', confirm: 'Are you sure?' %>
+</div>
 
   </script>
-</div>
 
   <script type="text/template" id="tmpl_newplanet">
     <form>

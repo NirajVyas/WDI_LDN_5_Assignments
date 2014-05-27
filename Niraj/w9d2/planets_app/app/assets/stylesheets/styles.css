@@ -1,8 +1,6 @@
 body {
-/*  background-image: url(/universe.jpg);
-*/  
-/*color: white;
-background-color: black;*/
+background-image: url(/universe.jpg);
+color: white;
 }
 
 .new_planet {
@@ -16,5 +14,10 @@ background-color: black;*/
 }
 
 .added_planet {
-  background-color: #FF9640;
+  display: inline-block;
+  padding: 10px;
+  clear: both;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 100px;
 }
