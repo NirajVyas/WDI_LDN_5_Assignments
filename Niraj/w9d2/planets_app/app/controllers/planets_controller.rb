@@ -25,7 +25,12 @@ end
 end
 
  def destroy
-    Planet.find(params[:id]).destory
+    @planet = Planet.find(params[:id]).destory
+    if @planet.destroy
+      respond_with @planet, status: :accepted
+    else
+      respond_with @planet, status: :unprocessable_entity
+  end
  end
 
 

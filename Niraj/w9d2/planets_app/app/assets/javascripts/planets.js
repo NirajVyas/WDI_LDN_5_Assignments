@@ -20,12 +20,17 @@ Planets.Views.PlanetView = Backbone.View.extend({
 
   initialize: function() {
     this.listenTo(this.model, "change", this.render);
-  },
+  }, 
 
   render: function() {
     this.$el.html(this.template({planet: this.model}));
     return this;
   },
+
+  // remove:function(){
+  //   this.model.destroy();
+  //   this.$el.remove();
+  // }
 
   makeHeadLineEditable: function(ev) {
     var $target = $(ev.currentTarget);
